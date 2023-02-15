@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700;800&display=swap');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 html, body {
     font-family: Lobster Two, Arial;
@@ -88,8 +89,86 @@ p {
     height: 100%;
 }
 
+.bg-color {
+    background-color: #111111;
+}
+
+section#download ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translateY(25%);
+  }
+  
+  li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .download {
+    font-family: Encode Sans, Arial;
+    width: 250px;
+    height: 76px;
+    background: #fff;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  .download > .fa {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+  
+  .df,
+  .dfn {
+    position: absolute;
+    left: 100px;
+  }
+  
+  .df {
+    top: 10px;
+    font-size: 1em;
+  }
+  
+  .dfn {
+    top: 28px;
+    font-size: 1.6em;
+  }
+  
+  .download:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
 @media (max-width: 1600px) {
     section#home h2{
         font-size: 3.5rem;
     }
+}
+
+#btn-send-loader{
+    display: none;
+  }
+  
+  #alert {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+  }
+
+section#help input,
+section#help button,
+section#help textarea,
+section#help label {
+    font-family: Encode Sans, Arial;
 }
