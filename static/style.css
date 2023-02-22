@@ -19,6 +19,9 @@ html, body {
     top: 0;
     width: 100%;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a:hover {
@@ -62,7 +65,6 @@ button.navbar-button {
 
 .navbar-collapse{
     margin: 10px;
-    background-color: #311D3F;
 }
 
 section#home{
@@ -109,8 +111,8 @@ section#download ul {
   
   .download {
     font-family: Encode Sans, Arial;
-    width: 250px;
-    height: 76px;
+    width: 210px;
+    height: 60px;
     background: #fff;
     float: left;
     border-radius: 5px;
@@ -124,23 +126,23 @@ section#download ul {
     color: black;
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 10px;
     transform: translateY(-50%);
   }
   
   .df,
   .dfn {
     position: absolute;
-    left: 100px;
+    left: 70px;
   }
   
   .df {
-    top: 10px;
+    top: 5px;
     font-size: 1em;
   }
   
   .dfn {
-    top: 28px;
+    top: 20px;
     font-size: 1.6em;
   }
   
@@ -161,9 +163,10 @@ section#download ul {
   
   #alert {
     position: fixed;
-    z-index: 10;
+    z-index: 1000;
     top: 30px;
     right: 30px;
+    font-family: Encode Sans, Arial;
   }
 
 section#help input,
